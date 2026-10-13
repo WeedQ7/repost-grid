@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<title>Repost Grid — проверка</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="eyebrow">IPHONE WEB APP · READ-ONLY</div>
+  <h1>Repost Grid</h1>
+  <p class="sub">Проверка доступа к твоим репостам TikTok</p>
+</header>
+<main>
+  <section class="card">
+    <h2>1. Открой TikTok в браузере</h2>
+    <p>Войди в свой аккаунт на официальном сайте. Эта страница не получает твой пароль и не читает cookies.</p>
+    <a class="button" href="https://www.tiktok.com/" target="_blank" rel="noopener">Открыть TikTok ↗</a>
+    <p class="hint">После входа вернись сюда. Пока мы только проверяем, какой способ доступа возможен на iPhone.</p>
+  </section>
+  <section class="card">
+    <h2>2. Проверка в Safari</h2>
+    <p>Safari изолирует данные разных сайтов. Эта страница не может просто забрать сессию TikTok из другой вкладки или приложения.</p>
+    <button id="check" class="button secondary">Проверить возможности браузера</button>
+    <pre id="result" aria-live="polite">Проверка ещё не запускалась.</pre>
+  </section>
+  <section class="card">
+    <h2>Что дальше</h2>
+    <ul>
+      <li>Если есть безопасный доступ к списку — добавим сетку видео.</li>
+      <li>Если доступ закрыт — проверим вариант с авторизованной страницей TikTok, не передавая пароли сторонним сервисам.</li>
+      <li>В этой версии запросов на удаление нет.</li>
+    </ul>
+  </section>
+  <p class="footer">Это прототип интерфейса, а не готовый удалитель. Для настоящего доступа к данным нужен источник списка репостов.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

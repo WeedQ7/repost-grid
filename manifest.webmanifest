@@ -1,0 +1,9 @@
+{
+  "name": "Repost Grid — проверка",
+  "short_name": "Repost Grid",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f3f5",
+  "theme_color": "#111111",
+  "description": "Прототип проверки доступа к списку репостов TikTok"
+}
